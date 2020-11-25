@@ -1,0 +1,89 @@
+{
+  "name": "gest_hosp_front",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.11.6",
+    "@testing-library/react": "^11.2.2",
+    "@testing-library/user-event": "^12.2.2",
+    "@trendmicro/react-validation": "^0.1.0",
+    "axios": "^0.21.0",
+    "bootstrap": "^4.5.3",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "evergreen-ui": "^5.1.2",
+    "express": "^4.17.1",
+    "generator": "^1.0.1",
+    "google-maps-react": "^2.0.6",
+    "history": "^5.0.0",
+    "http": "0.0.1-security",
+    "jquery": "^3.5.1",
+    "lodash": "^4.17.20",
+    "moment": "^2.29.1",
+    "mysql": "^2.18.1",
+    "react": "^17.0.1",
+    "react-alert": "^7.0.2",
+    "react-autocomplete": "^1.8.1",
+    "react-bootstrap-datetimepicker": "0.0.22",
+    "react-bootstrap-table": "^4.3.1",
+    "react-bootstrap-table-next": "^4.0.3",
+    "react-bootstrap-table2-editor": "^1.4.0",
+    "react-custom-validation": "^0.5.7",
+    "react-dom": "^17.0.1",
+    "react-free-scrollbar": "^0.3.4",
+    "react-google-autocomplete": "^1.2.6",
+    "react-icons": "^3.11.0",
+    "react-intl-tel-input": "^8.0.4",
+    "react-ionicons": "^3.1.4",
+    "react-modal": "^3.12.1",
+    "react-moment": "^1.0.0",
+    "react-notify-toast": "^0.5.1",
+    "react-radio-buttons": "^1.2.2",
+    "react-redux": "^7.2.2",
+    "react-router": "^5.2.0",
+    "react-router-dom": "^5.2.0",
+    "react-router-link": "^2.0.2",
+    "react-scripts": "^4.0.1",
+    "react-scroll": "^1.8.1",
+    "react-scroll-box": "^0.3.5",
+    "react-scrollbar": "^0.5.6",
+    "react-scrollbar-js": "^1.0.1",
+    "react-scrollbars": "0.0.5",
+    "react-search-input": "^0.11.3",
+    "react-select": "^3.1.1",
+    "react-sidenav": "^4.0.6",
+    "react-transition-group": "^4.4.1",
+    "react-validation": "^3.0.7",
+    "reactstrap": "^8.7.1",
+    "redux": "^4.0.5",
+    "redux-form": "^8.3.7",
+    "redux-thunk": "^2.3.0",
+    "styled-components": "^5.2.1",
+    "validator": "^13.1.17",
+    "web-vitals": "^0.2.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
