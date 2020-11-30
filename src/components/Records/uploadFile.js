@@ -37,7 +37,7 @@ class UploadFile extends React.Component {
         return (
             <div>
                 <input type="file" onChange={this.fileSelectedHandler} />
-                <button onClick={this.fileUploadHandler} >Upload</button>
+                <button onClick={this.fileUploadHandler} >Charger</button>
             </div>
         )
     }

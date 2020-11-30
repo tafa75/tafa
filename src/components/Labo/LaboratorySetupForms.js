@@ -69,10 +69,10 @@ class LaboratorySetupForms extends Component {
         </Card>
 
         <Card>
-          <CardHeader>List of Supplied Drugs</CardHeader>
+          <CardHeader>Liste des médicaments fournis</CardHeader>
           <CardBody>
             <div>
-              <i>No item found</i>
+              <i>Rien Enregistré</i>
             </div>
           </CardBody>
         </Card>

@@ -20,42 +20,42 @@ class EditDrugs extends Component {
       <div>
         <Card>
           <CardHeader>
-            <h3> Edit Drugs</h3>
+            <h3> Editer Medicament</h3>
           </CardHeader>
           <CardBody>
             <div className="row">
               <InputGroup className="col-md-7">
                 <Input />
                 <InputGroupAddon addonType="append">
-                  <Button color="primary">Search</Button>
+                  <Button color="primary">Chercher</Button>
                 </InputGroupAddon>
               </InputGroup>
               <select className="col-md-1">
                 <option value="actions">Actions</option>
               </select>
               <div className="col-md-2" />
-              <Button className="btn btn-primary col-md-1">Create</Button>
+              <Button className="btn btn-primary col-md-1">Creer</Button>
             </div>
 
             <div style={{ marginTop: '20px' }}>
               <Table>
                 <thead>
                   <tr>
-                    <th>Items</th>
-                    <th>Price</th>
+                    <th>Article</th>
+                    <th>Prix</th>
                     <th>Balance</th>
-                    <th>Unit of issue</th>
-                    <th>Expiry Date</th>
-                    <th>Category</th>
+                    <th>Unité D´emission</th>
+                    <th>Date D´expiration</th>
+                    <th>Categorie</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <td>BP APPARATUS</td>
-                    <td>3000</td>
-                    <td>30</td>
-                    <td>2</td>
-                    <td>31-OCT-20</td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
                     <td>-</td>
                   </tr>
                 </tbody>

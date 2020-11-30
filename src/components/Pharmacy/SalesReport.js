@@ -19,13 +19,13 @@ class SalesReport extends Component {
     return (
       <div className="salesReport">
         <Card>
-          <CardHeader>Sales Report</CardHeader>
+          <CardHeader>Raport</CardHeader>
           <CardBody>
             <div className="row">
               <InputGroup className="col-md-7">
                 <Input />
                 <InputGroupAddon addonType="append">
-                  <Button color="secondary">Search</Button>
+                  <Button color="secondary">Chercher</Button>
                 </InputGroupAddon>
               </InputGroup>
               <select className="col-md-2">
@@ -52,13 +52,13 @@ class SalesReport extends Component {
                     <td>
                       <button className="btn">Edit</button>
                     </td>
-                    <td>06-JAN-18</td>
-                    <td>ADVANTAN CREAM</td>
-                    <td>Retainership Pharmacy Unit</td>
-                    <td>0</td>
-                    <td>4</td>
-                    <td>0</td>
-                    <td>In Patient</td>
+                    <td>  </td>
+                    <td>  </td>
+                    <td>  </td>
+                    <td>   </td>
+                    <td>   </td>
+                    <td>  </td>
+                    <td>  </td>
                   </tr>
                 </tbody>
               </Table>

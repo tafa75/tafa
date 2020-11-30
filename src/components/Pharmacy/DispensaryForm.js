@@ -78,7 +78,7 @@ class DispensaryForm extends Component {
         } = this;
     return (
         <Card>
-            <CardHeader><h5 className="text-center">Dispensary Form</h5></CardHeader>
+            <CardHeader><h5 className="text-center">Dispensaire</h5></CardHeader>
             <CardBody>
                 <div>
                 <FormGroup row>
@@ -116,7 +116,7 @@ class DispensaryForm extends Component {
         {dispense.length ? 
         <>
             <CardHeader>
-                <h6 align="center">Dispensary Details</h6>
+                <h6 align="center">Details Dispensaire</h6>
             </CardHeader>
             <CardBody>
                 <DispensaryTable dispense={dispense} handleDelete={handleDelete} />
@@ -127,7 +127,7 @@ class DispensaryForm extends Component {
                     color="success" 
                     onClick={handleSubmit}
                     className="offset-md-5 offset-lg-5 col-md-2 col-lg-2"
-                >Submit</Button>
+                >Envoyer</Button>
             </CardFooter>
         </>
         : null}
@@ -159,12 +159,12 @@ function DispensaryFormModal({
 }) {
     return (
         <Modal isOpen={modalIsOpen} toggle={toggleModal} size="lg">
-            <ModalHeader toggle={toggleModal}>Drug to Dispense</ModalHeader>
+            <ModalHeader toggle={toggleModal}>Medicament à Administrer</ModalHeader>
             <ModalBody>
             <form >
                 <FormGroup row>
                     <div className="col-md-6 col-lg-6">
-                        <label>Drugs</label>
+                        <label>Medicaments</label>
                         <input
                             onChange={handleChange}
                             className="form-control"
@@ -187,7 +187,7 @@ function DispensaryFormModal({
                 <FormGroup row>
                 
                     <div className="col-md-6 col-lg-6">
-                        <label>Quantity Dispensed</label>
+                        <label>Quantité Administrée</label>
                         <input
                             onChange={handleChange}
                             className="form-control"
@@ -219,10 +219,10 @@ function DispensaryTable ({ dispense, handleDelete }) {
             <thead>
                 <tr>
                 <th>PatientID</th>
-                <th>Drugs</th>
+                <th>Medicaments</th>
                 <th>Dosage</th>
-                <th>Quantity Dispensed</th>
-                <th>Delete</th>
+                <th>Quantité Administrée</th>
+                <th>Effacer</th>
                 </tr>
             </thead>
             <tbody>
@@ -236,7 +236,7 @@ function DispensaryTable ({ dispense, handleDelete }) {
 
                 <td>
                     
-                <Button outline size="sm" color="danger" onClick={() => handleDelete(item)}>delete</Button>
+                <Button outline size="sm" color="danger" onClick={() => handleDelete(item)}>Effacer</Button>
                 </td>
                 </tr>
             ))}

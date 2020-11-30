@@ -72,7 +72,7 @@ export default class EditModal extends React.Component {
       kinRelationship, kinPhone, kinEmail, kinoccupation, kinAddress } = this.state;
     return (
       <Modal size="lg" isOpen={editModalIsOpen} toggle={closeEditModal}>
-        <ModalHeader toggle={closeEditModal}>Preview Diagnosis<p>{this.state.new.email}</p></ModalHeader>
+        <ModalHeader toggle={closeEditModal}>Diacgnostique anterieure<p>{this.state.new.email}</p></ModalHeader>
         <ModalBody>
           <form onSubmit={this.handleEdit}>
             <div className="row">
@@ -97,7 +97,7 @@ export default class EditModal extends React.Component {
 
             <div className="row">
               <div className="col-xs-6 col-sm-6 col-md-4 col-lg-4">
-                <label>Surname</label>
+                <label>Nom</label>
                 <input
                   onChange={this.handleUserInput}
                   name="surname"
@@ -109,7 +109,7 @@ export default class EditModal extends React.Component {
               </div>
 
               <div className="col-xs-6 col-sm-6 col-md-4 col-lg-4">
-                <label>Firstname</label>
+                <label>Prenom</label>
                 <input
                   onChange={this.handleUserInput}
                   name="firstname"
@@ -121,7 +121,7 @@ export default class EditModal extends React.Component {
               </div>
 
               <div className="col-xs-6 col-sm-4 col-md-3 col-lg-4">
-                <label>Gender</label>
+                <label>Sexe</label>
                 <label>
                   <input
                     onClick={this.setGender}
@@ -130,7 +130,7 @@ export default class EditModal extends React.Component {
                     value="female"
                     name="gender"
                   />{' '}
-                  Female
+                  Feminin
                 </label>
                 <label>
                   <input
@@ -140,7 +140,7 @@ export default class EditModal extends React.Component {
                     value="male"
                     name="gender"
                   />{' '}
-                  Male
+                  Masculin
                 </label>
               </div>
               <div className="col-xs-6 col-sm-6 col-md-4 col-lg-4">
@@ -155,20 +155,20 @@ export default class EditModal extends React.Component {
               </div>
 
               <div className="col-xs-6 col-sm-6 col-md-4 col-lg-4">
-                <label>Marital Status</label>
+                <label>Situation Matrimoniale</label>
                 <select
                   onChange={this.logChange}
                   value={maritalstatus}
                   className="form-control">
                   <option value="" />
-                  <option value="single">Single</option>
-                  <option value="married">Married</option>
-                  <option value="divorced">Divorced</option>
+                  <option value="single">Celibataire</option>
+                  <option value="married">Marrié</option>
+                  <option value="divorced">Divorcé</option>
                 </select>
               </div>
 
               <div className="col-xs-6 col-sm-6 col-md-4 col-lg-4">
-                <label>Date Of Birth</label>
+                <label>Date De Naissance</label>
                 <input
                   onChange={this.logChange}
                   className="form-control"
@@ -179,32 +179,7 @@ export default class EditModal extends React.Component {
               </div>
 
               <div className="col-xs-6 col-sm-6 col-md-4 col-lg-4">
-                <label>Tribe</label>
-                <input
-                  onChange={this.logChange}
-                  className="form-control"
-                  type="text"
-                  value={tribe}
-                  placeholder="Tribe"
-                />
-              </div>
-
-              <div className="col-xs-6 col-sm-6 col-md-4 col-lg-4">
-                <label>Religion</label>
-                <select
-                  onChange={this.logChange}
-                  value={religion}
-                  className="form-control">
-                  <option value="" />
-                  <option value="islam">Islam</option>
-                  <option value="christianity">Christianity</option>
-                  <option value="traditional">Traditional</option>
-                  <option value="others">Others </option>
-                </select>
-              </div>
-
-              <div className="col-xs-6 col-sm-6 col-md-4 col-lg-4">
-                <label>Phone Number</label>
+                <label>Telephone</label>
                 <input
                   onChange={this.logChange}
                   className="form-control"
@@ -215,7 +190,7 @@ export default class EditModal extends React.Component {
               </div>
 
               <div className="col-xs-6 col-sm-6 col-md-4 col-lg-4">
-                <label>Email Address</label>
+                <label>Email</label>
                 <input
                   onChange={this.handleUserInput}
                   name="email"
@@ -227,7 +202,7 @@ export default class EditModal extends React.Component {
               </div>
 
               <div className="col-xs-6 col-sm-6 col-md-4 col-lg-4">
-                <label>Nationality</label>
+                <label>Nationalité</label>
                 <input
                   onChange={this.logChange}
                   className="form-control"
@@ -238,7 +213,7 @@ export default class EditModal extends React.Component {
               </div>
 
               <div className="col-xs-6 col-sm-6 col-md-4 col-lg-4">
-                <label>State</label>
+                <label>Region</label>
                 <input
                   onChange={this.logChange}
                   className="form-control"
@@ -260,7 +235,7 @@ export default class EditModal extends React.Component {
               </div>
 
               <div className="col-xs-6 col-sm-6 col-md-4 col-lg-4">
-                <label>Occupation</label>
+                <label>Profession</label>
                 <input
                   onChange={this.logChange}
                   className="form-control"
@@ -271,7 +246,7 @@ export default class EditModal extends React.Component {
               </div>
 
               <div className="col-xs-6 col-sm-6 col-md-4 col-lg-4">
-                <label>Address</label>
+                <label>Addresse</label>
                 <input
                   onChange={this.logChange}
                   className="form-control"
@@ -282,10 +257,10 @@ export default class EditModal extends React.Component {
               </div>
             </div>
 
-            <h5>Next Of Kin Information</h5>
+            <h5> Information Accompagnant</h5>
             <div className="row">
               <div className="col-xs-6 col-sm-6 col-md-4 col-lg-4">
-                <label>Name</label>
+                <label>Nom</label>
                 <input
                   onChange={this.logChange}
                   className="form-control"
@@ -295,7 +270,7 @@ export default class EditModal extends React.Component {
               </div>
 
               <div className="col-xs-6 col-sm-6 col-md-4 col-lg-4">
-                <label>RelationShip</label>
+                <label>Relation</label>
                 <input
                   onChange={this.logChange}
                   className="form-control"
@@ -306,7 +281,7 @@ export default class EditModal extends React.Component {
               </div>
 
               <div className="col-xs-6 col-sm-6 col-md-4 col-lg-4">
-                <label>Phone Number</label>
+                <label>Telephone</label>
                 <input
                   onChange={this.logChange}
                   className="form-control"
@@ -317,7 +292,7 @@ export default class EditModal extends React.Component {
               </div>
 
               <div className="col-xs-6 col-sm-6 col-md-4 col-lg-4">
-                <label>Email Address</label>
+                <label>Email </label>
                 <input
                   onChange={this.logChange}
                   className="form-control"
@@ -328,7 +303,7 @@ export default class EditModal extends React.Component {
               </div>
 
               <div className="col-xs-6 col-sm-6 col-md-4 col-lg-4">
-                <label>Occupation</label>
+                <label>Profession</label>
                 <input
                   onChange={this.logChange}
                   className="form-control"
@@ -339,7 +314,7 @@ export default class EditModal extends React.Component {
               </div>
 
               <div className="col-xs-6 col-sm-6 col-md-4 col-lg-4">
-                <label>Address</label>
+                <label>Addresse</label>
                 <input
                   onChange={this.logChange}
                   className="form-control"
@@ -359,12 +334,12 @@ export default class EditModal extends React.Component {
                   onClick={closeEditModal}
                   className="btn btn-primary"
                   >
-                  Submit
+                  Envoyer
                 </button>
               </div>
               <div className="col-xs-2 col-sm-2 col-md-2 col-lg-2">
                 <button onClick={closeEditModal} className="btn btn-danger">
-                  Cancel
+                Annuler
                 </button>
               </div>
             </div>

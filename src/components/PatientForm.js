@@ -15,18 +15,18 @@ function PatientForm({ record }) {
   return (
     <Container style={flexStyle}>
       <div style={{ width: '20%' }}>
-        <img src={defaultImage} alt="default_image" />
+        
       </div>
       <div style={{ width: '80%' }}>
         <div style={flexStyle}>
           <div className="label" style={{ padding: '.7em', width: '41.66%' }}>
-            <label>Names: </label>
+            <label>Nom: </label>
             <span>
               {record.surname} {record.firstname}
             </span>
           </div>
           <div className="label" style={{ padding: '.7em', width: '25%' }}>
-            <label>Gender: </label>
+            <label>Sexe: </label>
             <span>{record.gender}</span>
           </div>
           <div className="label" style={{ padding: '.7em', width: '33.33%' }}>
@@ -36,7 +36,7 @@ function PatientForm({ record }) {
         </div>
         <div style={flexStyle}>
           <div className="label" style={{ padding: '.7em', width: '41.66%' }}>
-            <label>Phone: </label>
+            <label>Telephone: </label>
             <span>{record.phoneNo}</span>
           </div>
           <div className="label" style={{ padding: '.7em', width: '25%' }}>
@@ -44,7 +44,7 @@ function PatientForm({ record }) {
             <span>{record.id}</span>
           </div>
           <div className="label" style={{ padding: '.7em', width: '33.33%' }}>
-            <label>Doctor: </label>
+            <label>Docteur: </label>
             <span>{doctor}</span>
           </div>
         </div>

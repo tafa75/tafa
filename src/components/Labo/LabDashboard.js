@@ -18,43 +18,43 @@ const Tabs = ({ hideCarousel=f=>f, fetchData=f=>f, setMode=f=>f, setComponentToR
         onClick={() => setComponentToRender('LaboratorySetupForms')}
         className="btn btn-outline-success col-xs-12 col-sm-6 col-md-4 col-lg-4"
       >
-        Lab Setup Forms
+        Laboratoire Setup Forms
       </button>
       <button
         onClick={() => setComponentToRender('CompletedLabTests')}
         className="btn btn-outline-primary col-xs-12 col-sm-6 col-md-4 col-lg-4"
       >
-        Completed Lab Tests
+       Tests  Complets Laboratoire
       </button>
       <button
         onClick={() => setComponentToRender('SampleCollection')}
         className="btn btn-outline-danger col-xs-12 col-sm-6 col-md-4 col-lg-4"
       >
-        Sample Collection
+         Collection Echantillon
       </button>
       <button
         onClick={() => setComponentToRender('SampleReception')}
         className="btn btn-outline-warning col-xs-12 col-sm-6 col-md-4 col-lg-4"
       >
-        Sample Analysis
+      Analyse Echantillon
       </button>
       <button
         onClick={() => setComponentToRender('PathologistComment')}
         className="btn btn-outline-success col-xs-12 col-sm-6 col-md-4 col-lg-4"
       >
-        Pathologist Comment
+         Commentaire Du Pathologist
       </button>
       <button
         onClick={() => setComponentToRender('SampleTracking')}
         className="btn btn-outline-primary col-xs-12 col-sm-6 col-md-4 col-lg-4"
       >
-        Sample Tracking
+        Suivie Echantillon
       </button>
       <button
         onClick={() => setComponentToRender('PrintResult')}
         className="btn btn-outline-danger col-xs-12 col-sm-6 col-md-4 col-lg-4"
       >
-        Print Result
+        Imprimer Resultat
       </button>
     </div>
   );

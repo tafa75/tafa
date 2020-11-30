@@ -15,7 +15,7 @@ const Organization  = ({ records = {} }) => {
   };
   return (
     <div>
-      <h5>System Examination</h5>
+      <h5>Systeme D´observation</h5>
       <div
         className="row"
         style={{ display: 'flex', flexDirection: 'horizontal' }}>
@@ -37,7 +37,7 @@ const Organization  = ({ records = {} }) => {
         </div>
         <div className="col-md-4" style={divideStyle}>
           <label className="col-md-6" style={valueStyle}>
-            General Examination:
+            Observation Generale:
           </label>
           <label className="col-md-6 value" style={valueStyle}>
             {records.generalexamination || '--'}{' '}
@@ -113,7 +113,7 @@ const Organization  = ({ records = {} }) => {
         </div>
         <div className="col-md-4" style={divideStyle}>
           <label className="col-md-6" style={labelValue}>
-            Best Verbal Response:{' '}
+             Verbal Response:{' '}
           </label>
           <label className="col-md-6 value" style={valueStyle}>
             {records.BVR || '--'}
@@ -121,7 +121,7 @@ const Organization  = ({ records = {} }) => {
         </div>
         <div className="col-md-4" style={divideStyle}>
           <label className="col-md-6" style={labelValue}>
-            Best Motor Response:{' '}
+           Motor Response:{' '}
           </label>
           <label className="col-md-6 value" style={valueStyle}>
             {records.BMR || '--'}

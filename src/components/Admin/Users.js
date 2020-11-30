@@ -50,7 +50,7 @@ export default class Users extends Component {
     });
     return (
       <div>
-        <h2 className="text-center">List of All Users</h2>
+        <h2 className="text-center">List e des Utilisateurs</h2>
         <input
           type="text"
           value={this.state.searchTerm}
@@ -62,10 +62,10 @@ export default class Users extends Component {
         <Table size="md" bordered hover striped>
           <thead>
             <tr>
-              <th>Name</th>
+              <th>Nom</th>
               <th>Username</th>
               <th>Role</th>
-              <th>Speciality</th>
+              <th>Specialité</th>
             </tr>
           </thead>
           <tbody>{rows}</tbody>

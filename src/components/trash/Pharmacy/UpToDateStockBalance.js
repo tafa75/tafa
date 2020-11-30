@@ -10,32 +10,32 @@ class UpToDateStockBalance extends Component {
     return (
       <div className="upToDateStockBal">
         <Card>
-          <CardHeader>Sales Report</CardHeader>
+          <CardHeader>Rapport De Vente</CardHeader>
           <CardBody>
             <div style={{ marginTop: '20px' }}>
               <Table>
                 <thead>
                   <tr>
-                    <th>Item</th>
-                    <th>Balance</th>
-                    <th>Cost Price</th>
-                    <th>Selling Price</th>
-                    <th>Amount</th>
-                    <th>Unit of Issue</th>
-                    <th>Expiry Date</th>
+                    <th>Article</th>
+                    <th></th>
+                    <th>Prix D´Achae</th>
+                    <th>Prix De Vente</th>
+                    <th>Montant</th>
+                    <th>Unité D´Emission</th>
+                    <th>Date D´Expiration</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
                     <td>
-                      <a href="#">"CREPE BANDAGE 4"""</a>
+                      <a href="#"></a>
                     </td>
-                    <td>96</td>
-                    <td>142.86</td>
-                    <td>200</td>
-                    <td>13,714.29</td>
-                    <td>1</td>
-                    <td>31-OCT-20</td>
+                    <td> </td>
+                    <td>  </td>
+                    <td>  </td>
+                    <td>  </td>
+                    <td>  </td>
+                    <td>  </td>
                   </tr>
                 </tbody>
               </Table>

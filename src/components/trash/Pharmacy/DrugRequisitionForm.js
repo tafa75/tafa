@@ -18,7 +18,7 @@ class DrugRequisition extends Component {
     return (
       <div>
         <Card>
-          <CardHeader>Drug Requisition Form</CardHeader>
+          <CardHeader>Peticion Medicament</CardHeader>
           <CardBody>
             <div className="row">
               <form className="col-md-8 ">
@@ -32,7 +32,7 @@ class DrugRequisition extends Component {
                   />
                 </div>
                 <div className="form-group row">
-                  <label className="col-md-3">Requisition Number</label>
+                  <label className="col-md-3">Numero Peticiion</label>
                   <input
                     type="text"
                     className="form-control col-md-6"
@@ -43,7 +43,7 @@ class DrugRequisition extends Component {
                   />
                 </div>
                 <div className="form-group row">
-                  <label className="col-md-3">Drugs</label>
+                  <label className="col-md-3">Medicament</label>
                   <input
                     type="text"
                     className="form-control col-md-6"
@@ -52,7 +52,7 @@ class DrugRequisition extends Component {
                   />
                 </div>
                 <div className="form-group row">
-                  <label className="col-md-3">Quantity</label>
+                  <label className="col-md-3">Quantité</label>
                   <input
                     type="text"
                     className="form-control col-md-6"
@@ -61,7 +61,7 @@ class DrugRequisition extends Component {
                   />
                 </div>
                 <div className="form-group row">
-                  <label className="col-md-3">Request Send to</label>
+                  <label className="col-md-3">Peticion Envoyée</label>
                   <input
                     type="text"
                     className="form-control col-md-6"
@@ -79,7 +79,7 @@ class DrugRequisition extends Component {
 
               <div className="col-md-4">
                 <button className="btn btn-default btn-secondary">
-                  Send Request
+                  Envoyer Peticion
                 </button>
               </div>
             </div>
@@ -87,10 +87,10 @@ class DrugRequisition extends Component {
         </Card>
 
         <Card>
-          <CardHeader> List of Selected Drugs</CardHeader>
+          <CardHeader> Liste De Medicament Choisis</CardHeader>
           <CardBody>
             <div>
-              <i>No item found</i>
+              <i>Categorie Non Trouver</i>
             </div>
           </CardBody>
         </Card>

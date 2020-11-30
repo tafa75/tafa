@@ -21,26 +21,26 @@ const Tabs = ({ hideCarousel }) => {
         to="/pharmacy/addDrugs"
         className="btn btn-outline-warning col-xs-12 col-sm-6 col-md-4 col-lg-4"
         onClick={hideCarousel}>
-        Add Drugs
+        Ajouter Mendicament
       </NavLink>
 
       <NavLink
         to="/pharmacy/dailyInventoryReport"
         className="btn btn-outline-danger col-xs-12 col-sm-6 col-md-4 col-lg-4"
         onClick={hideCarousel}>
-        Daily Inventory Report
+        Inventaire Journalier
       </NavLink>
       <NavLink
         to="/pharmacy/salesReport"
         className="btn btn-outline-secondary col-xs-12 col-sm-6 col-md-4 col-lg-4"
         onClick={hideCarousel}>
-        Sales Report
+        Rapport De Vente
       </NavLink>
       <NavLink
         to="/pharmacy/upToDateStockBalance"
         className="btn btn-outline-success col-xs-12 col-sm-6 col-md-5 col-lg-5"
         onClick={hideCarousel}>
-        Up To Date Stock Balance
+        Mise Á jour Stock
       </NavLink>
     </div>
   );
@@ -89,7 +89,7 @@ const TabForm = ({
             ))}
           {showCarousel && (
             <div style={{ height: '40vh' }}>
-              <h1>News Feed</h1>
+              <h1>Fil D´Actualité</h1>
             </div>
           )}
         </div>

@@ -9,8 +9,8 @@ const mapStyles = {
 
  class MapContainer extends Component {
 state={
-  lat:'-1.2884',
-  lng:'36.8233',
+  lat:'',
+  lng:'',
 }
 componentDidMount(){
   const callback=(lat,lng)=>{
@@ -43,5 +43,5 @@ componentDidMount(){
 }
 
 export default GoogleApiWrapper({
-  apiKey: 'AIzaSyCO5EH4fewbHSgGKqGKEyygqXxqYVZcm_o'
+ // apiKey: 'AIzaSyCO5EH4fewbHSgGKqGKEyygqXxqYVZcm_o'
 })(MapContainer);

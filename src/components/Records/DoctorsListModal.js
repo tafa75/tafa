@@ -24,7 +24,7 @@ class TableRow extends React.Component {
             }}
             style={{ marginBottom: '1rem' }}
           >
-            Assign
+            Assigné
           </button>
         </td>
       </tr>
@@ -60,9 +60,9 @@ class DoctorsTable extends React.Component {
         <Table bordered hover striped>
           <thead>
             <tr>
-              <th>Name</th>
-              <th>Speciality</th>
-              <th className="moveToCenter">Assign Doctor</th>
+              <th>Nom</th>
+              <th>Specialité</th>
+              <th className="moveToCenter">Assigné Docteur</th>
             </tr>
           </thead>
           <tbody>{rows}</tbody>
@@ -156,7 +156,7 @@ class DoctorsListModal extends React.Component {
           size="lg"
         >
           <ModalHeader toggle={this.props.closeDoctorsModal}>
-            Assign a doctor to {this.props.patientId}
+            Assigné a Docteur ... {this.props.patientId}
           </ModalHeader>
           <ModalBody>
             <Notifications options={{ zIndex: 200, top: '50px' }} />
@@ -178,7 +178,7 @@ class DoctorsListModal extends React.Component {
               onClick={this.props.closeDoctorsModal}
               className="btn btn-secondary"
             >
-              Next Patient
+              Patient suivant
             </button>
           </ModalBody>
         </Modal>

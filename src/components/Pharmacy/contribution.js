@@ -46,7 +46,7 @@ export default class Contribution extends Component {
         <h2 className="head">Contribution</h2>
         <div>
           <form>
-          <label>Employer Code</label>
+          <label> Code Employé</label>
           <input
             className="form-control"           
             value={this.state.employerCode}
@@ -57,7 +57,7 @@ export default class Contribution extends Component {
           />
           <br />
 
-          <label>Date Of Contribution</label>
+          <label>Date De Contribution</label>
           
           <input
             className="form-control"           
@@ -81,7 +81,7 @@ export default class Contribution extends Component {
           />
                    
           <br />
-        <button onClick={this.addContribution} className="btn btn-primary">Add Contribution</button>
+        <button onClick={this.addContribution} className="btn btn-primary">Ajouter Contribution</button>
         </form>
         <br /> <br />
       </div>

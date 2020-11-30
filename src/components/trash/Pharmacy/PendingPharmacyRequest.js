@@ -101,8 +101,8 @@ class PendingPharmacyRequest extends Component {
                     <thead>
                       <tr>
                         <th>Patient ID</th>
-                        <th>Full Name</th>
-                        <th>Gender</th>
+                        <th>Nom Complet</th>
+                        <th>Sexe</th>
                       </tr>
                     </thead>
                     <tbody>{rows}</tbody>

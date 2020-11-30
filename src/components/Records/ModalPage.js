@@ -185,12 +185,12 @@ class ModalPage extends React.Component {
     return (
       <div>
         <Button onClick={this.toggle} style={{ margin: 10 }}>
-          Add New patient
+          Nouveau patient
         </Button>
         <Notifications options={{ zIndex: 200, top: '50px' }} />
         {/* the modal starts here */}
         <Modal isOpen={this.state.modal} toggle={this.toggle} size="lg">
-          <ModalHeader toggle={this.toggle}>Add New patient</ModalHeader>
+          <ModalHeader toggle={this.toggle}>Ajouter patient</ModalHeader>
           <ModalBody>
             {/* the form */}
             <form>
@@ -218,50 +218,50 @@ class ModalPage extends React.Component {
 
               <div className="row">
                 <div className="col-xs-6 col-sm-6 col-md-4 col-lg-4">
-                  <label>SurName</label>
+                  <label>Nom</label>
                   <input
                     onChange={this.handleUserInput}
                     name="surname"
                     type="text"
                     ref="surname"
                     className="form-control Surname"
-                    placeholder="SurName"
+                    placeholder="Nom"
                   />
                 </div>
 
                 <div className="col-xs-6 col-sm-6 col-md-4 col-lg-4">
-                  <label>FirstName</label>
+                  <label>Prenom</label>
                   <input
                     onChange={this.handleUserInput}
                     name="firstname"
                     type="text"
                     ref="firstname"
                     className="form-control Firstname"
-                    placeholder="Name"
+                    placeholder="Prenom"
                   />
                 </div>
 
                 <div className="col-xs-6 col-sm-4 col-md-3 col-lg-4">
-                  <label>Gender</label>
+                  <label>Sexe</label>
                   <label>
                     <input
                       onClick={this.setGender}
-                      checked={this.state.gender === 'female'}
+                      checked={this.state.gender === 'feminin'}
                       type="radio"
-                      value="female"
-                      name="gender"
+                      value="feminin"
+                      name="Sexe"
                     />{' '}
-                    Female
+                    Feminin
                   </label>
                   <label>
                     <input
                       onClick={this.setGender}
-                      checked={this.state.gender === 'male'}
+                      checked={this.state.gender === 'masculin'}
                       type="radio"
-                      value="male"
-                      name="gender"
+                      value="masculin"
+                      name="sexe"
                     />{' '}
-                    Male
+                    Masculin
                   </label>
                 </div>
                 <div className="col-xs-6 col-sm-6 col-md-4 col-lg-4">
@@ -276,197 +276,173 @@ class ModalPage extends React.Component {
                 </div>
 
                 <div className="col-xs-6 col-sm-6 col-md-4 col-lg-4">
-                  <label>Marital Status</label>
+                  <label>Situation Matrimoniale</label>
                   <select
                     onChange={this.logChange}
                     ref="maritalstatus"
                     className="form-control">
                     <option value="" />
-                    <option value="single">Single</option>
-                    <option value="married">Married</option>
-                    <option value="divorced">Divorced</option>
+                    <option value="single">Celibataire</option>
+                    <option value="married">Marié</option>
+                    <option value="divorced">Divorcé</option>
                   </select>
                 </div>
 
                 <div className="col-xs-6 col-sm-6 col-md-4 col-lg-4">
-                  <label>Date Of Birth</label>
+                  <label>Date De Naissance</label>
                   <input
                     onChange={this.logChange}
                     className="form-control"
                     type="date"
                     ref="DOB"
-                    placeholder="Date Of Birth"
+                    placeholder="Date De Naissance"
                   />
                 </div>
 
-                <div className="col-xs-6 col-sm-6 col-md-4 col-lg-4">
-                  <label>Tribe</label>
-                  <input
-                    onChange={this.logChange}
-                    className="form-control"
-                    type="text"
-                    ref="tribe"
-                    placeholder="Tribe"
-                  />
-                </div>
 
                 <div className="col-xs-6 col-sm-6 col-md-4 col-lg-4">
-                  <label>Religion</label>
-                  <select
-                    onChange={this.logChange}
-                    ref="religion"
-                    className="form-control">
-                    <option value="" />
-                    <option value="islam">Islam</option>
-                    <option value="christianity">Christianity</option>
-                    <option value="traditional">Traditional</option>
-                    <option value="others">Others </option>
-                  </select>
-                </div>
-
-                <div className="col-xs-6 col-sm-6 col-md-4 col-lg-4">
-                  <label>Phone Number</label>
+                  <label>Telephone</label>
                   <input
                     onChange={this.logChange}
                     className="form-control"
                     type="number"
                     ref="phoneNo"
-                    placeholder="Phone Number"
+                    placeholder="Telephone"
                   />
                 </div>
 
                 <div className="col-xs-6 col-sm-6 col-md-4 col-lg-4">
-                  <label>Email Address</label>
+                  <label>Email </label>
                   <input
                     onChange={this.handleUserInput}
                     name="email"
                     className="form-control"
                     type="text"
                     ref="email"
-                    placeholder="Email Address"
+                    placeholder="Email"
                   />
                 </div>
 
                 <div className="col-xs-6 col-sm-6 col-md-4 col-lg-4">
-                  <label>Nationality</label>
+                  <label>Nationalité</label>
                   <input
                     onChange={this.logChange}
                     className="form-control"
                     type="text"
                     ref="nationality"
-                    placeholder="Nationality"
+                    placeholder="Nationalité"
                   />
                 </div>
 
                 <div className="col-xs-6 col-sm-6 col-md-4 col-lg-4">
-                  <label>State</label>
+                  <label>Region</label>
                   <input
                     onChange={this.logChange}
                     className="form-control"
                     type="text"
                     ref="state"
-                    placeholder="State"
+                    placeholder="Region"
                   />
                 </div>
 
                 <div className="col-xs-6 col-sm-6 col-md-4 col-lg-4">
-                  <label>LGA</label>
+                  <label>Departement</label>
                   <input
                     onChange={this.logChange}
                     className="form-control"
                     type="text"
                     ref="lga"
-                    placeholder="LGA"
+                    placeholder="departement"
                   />
                 </div>
 
                 <div className="col-xs-6 col-sm-6 col-md-4 col-lg-4">
-                  <label>Occupation</label>
+                  <label>Profession</label>
                   <input
                     onChange={this.logChange}
                     className="form-control"
                     type="text"
                     ref="occupation"
-                    placeholder="Occupation"
+                    placeholder="Profession"
                   />
                 </div>
 
                 <div className="col-xs-6 col-sm-6 col-md-4 col-lg-4">
-                  <label>Address</label>
+                  <label>Addresse</label>
                   <input
                     onChange={this.logChange}
                     className="form-control"
                     type="textarea"
                     ref="address"
-                    placeholder="Address"
+                    placeholder="Addresse"
                   />
                 </div>
               </div>
 
-              <h5>Next Of Kin Information</h5>
+              <h5>Accompagnant</h5>
               <div className="row">
                 <div className="col-xs-6 col-sm-6 col-md-4 col-lg-4">
-                  <label>Name</label>
+                  <label>Nom</label>
                   <input
                     onChange={this.logChange}
                     className="form-control"
                     ref="kinName"
-                    placeholder="Kin Name"
+                    placeholder="Accompagnant"
                   />
                 </div>
 
                 <div className="col-xs-6 col-sm-6 col-md-4 col-lg-4">
-                  <label>RelationShip</label>
+                  <label>Relation</label>
                   <input
                     onChange={this.logChange}
                     className="form-control"
                     type="text"
                     ref="kinRelationship"
-                    placeholder="RelationShip"
+                    placeholder="Relation"
                   />
                 </div>
 
                 <div className="col-xs-6 col-sm-6 col-md-4 col-lg-4">
-                  <label>Phone Number</label>
+                  <label>Telephone Accompagnant</label>
                   <input
                     onChange={this.logChange}
                     className="form-control"
                     type="text"
                     ref="kinPhone"
-                    placeholder=" Kin Phone Number"
+                    placeholder="Telephone Accompagnant"
                   />
                 </div>
 
                 <div className="col-xs-6 col-sm-6 col-md-4 col-lg-4">
-                  <label>Email Address</label>
+                  <label>Email </label>
                   <input
                     onChange={this.logChange}
                     className="form-control"
                     type="text"
                     ref="kinEmail"
-                    placeholder=" Kin Email Address"
+                    placeholder="Email Accompagnant"
                   />
                 </div>
 
                 <div className="col-xs-6 col-sm-6 col-md-4 col-lg-4">
-                  <label>Occupation</label>
+                  <label>Profession Accompagnant</label>
                   <input
                     onChange={this.logChange}
                     className="form-control"
                     ref="kinoccupation"
                     id="Occupation"
-                    placeholder=" Kin Occupation"
+                    placeholder="Profession Accompagnant"
                   />
                 </div>
 
                 <div className="col-xs-6 col-sm-6 col-md-4 col-lg-4">
-                  <label>Address</label>
+                  <label>Addresse</label>
                   <input
                     onChange={this.logChange}
                     className="form-control"
                     type="textarea"
                     ref="kinAddress"
-                    placeholder=" Kin Address"
+                    placeholder=" Addresse"
                   />
                 </div>
               </div>
@@ -482,12 +458,12 @@ class ModalPage extends React.Component {
                     method="POST"
                     className="btn btn-primary"
                     disabled={!this.state.formValid}>
-                    Submit
+                    Envoyer
                   </button>
                 </div>
                 <div className="col-xs-2 col-sm-2 col-md-2 col-lg-2">
                   <button toggle={this.toggle} className="btn btn-danger">
-                    Cancel
+                    Annuler
                   </button>
                 </div>
               </div>

@@ -23,7 +23,7 @@ export default class Account extends Component {
       <div className="row">
         <div className="col-xs-12 col-sm-12 col-md-4 col-lg-3">
           {' '}
-          <AccountGuide />{' '}
+       
         </div>
         <div
           style={{ border: '1px solid #007bff' }}

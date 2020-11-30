@@ -16,13 +16,13 @@ const Tabs = ({
         onClick={() => setComponentToRender("Users")}
         className="btn btn-outline-success col-xs-12 col-sm-6 col-md-4 col-lg-4"
       >
-        All Users
+           Utilisateurs
       </button>
       <button
         onClick={() => setComponentToRender("CreateUser")}
         className="btn btn-outline-primary col-xs-12 col-sm-6 col-md-4 col-lg-4"
       >
-        Add User
+        Ajouter Utilisateur
       </button>
     </div>
   );

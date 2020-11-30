@@ -42,28 +42,28 @@ export default () => {
                 <ul className="site-menu js-clone-nav mr-auto d-none d-lg-block">
                   <li>
                     <NavLink exact to="/patientlist" className="nav">
-                      Records
+                     Enregistrement
                     </NavLink>
                   </li>
                   
                   <li>
                     <NavLink to="/patient_clarking" className="nav">
-                      Doctors
+                      Docteurs
                     </NavLink>
                   </li>
                   <li>
                     <NavLink to="/patient_clarking" className="nav">
-                      Pharmacy
+                      Pharmacie
                     </NavLink>
                   </li>
                   <li>
                     <NavLink to="/patient_clarking" className="nav">
-                      Laboratory
+                      Laboratoire
                     </NavLink>
                   </li>
                   <li>
                     <NavLink to="/patient_clarking" className="nav">
-                      Admin
+                      Administration
                     </NavLink>
                   </li>
                   <li>

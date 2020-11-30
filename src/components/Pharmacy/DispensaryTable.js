@@ -8,16 +8,16 @@ class DispensaryTable extends Component {
     return (
       <div>
         <center>
-          <h5>Dispensary Table</h5>
+          <h5>Dispensaire Table</h5>
         </center>
 
         <Table>
           <thead>
             <tr>
               <th>PatientID</th>
-              <th>Drugs</th>
+              <th>Medicaments</th>
               <th>Dossage</th>
-              <th>Quantity</th>
+              <th>Quantité</th>
             </tr>
           </thead>
         </Table>

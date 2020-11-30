@@ -32,7 +32,7 @@ class PatientTable extends React.Component {
             <button
               className="btn btn-secondary"
               onClick={() => openDoctorsModal(patient.id)}>
-              Assign
+              Assigné
             </button>
           </td>
 
@@ -41,7 +41,7 @@ class PatientTable extends React.Component {
               <button
                 className="btn btn-primary"
                 onClick={() => openModal(patient)}>
-                Edit
+                Editer
               </button>
             </td>
           )}
@@ -73,14 +73,14 @@ class PatientTable extends React.Component {
               <tr>
                 <th />
                 <th>Patient No</th>
-                <th>Full Name</th>
-                <th>Gender</th>
-                <th className="moveToCenter">Assign</th>
+                <th>Prenom Complete</th>
+                <th>Sexe</th>
+                <th className="moveToCenter">Assigné</th>
                 {/* {
                     this.props.renderEditButton ? <th className="moveToCenter">Edit Record</th>: null 
                   } */}
 
-                {renderEditButton && <th className="moveToCenter">Edit</th>}
+                {renderEditButton && <th className="moveToCenter">Editer</th>}
 
                 {/*
                     this part is used to enable in-records delete operations

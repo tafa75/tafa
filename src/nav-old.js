@@ -71,35 +71,35 @@ export default class NavbarNow extends Component {
             {records && (
               <NavItem onClick={this.toggle}>
                 <NavLink to="/patientlist" className="nav">
-                  Record Module
+                  Enregistrement
                 </NavLink>
               </NavItem>
             )}
             {doctors && (
               <NavItem onClick={this.toggle}>
                 <NavLink to="/patient_clarking" className="nav">
-                  Doctors Module
+                  Docteurs
                 </NavLink>
               </NavItem>
             )}
             {pharmacy && (
               <NavItem onClick={this.toggle}>
                 <NavLink to="/pharmacy" className="nav">
-                  Pharmacy Module
+                  Pharmacie
                 </NavLink>
               </NavItem>
             )}
             {lab && (
               <NavItem onClick={this.toggle}>
                 <NavLink to="/lab" className="nav">
-                  Laboratory Module
+                  Laboratoire
                 </NavLink>
               </NavItem>
             )}
 
             <NavItem onClick={this.toggle}>
               <NavLink to="/admin" className="nav">
-                Admin
+                Administration
               </NavLink>
             </NavItem>
             {/* {account && (

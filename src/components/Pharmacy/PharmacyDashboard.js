@@ -19,14 +19,14 @@ const Tabs = ({ setComponentToRender }) => {
         onClick={() => setComponentToRender("SalesReport")}
         className="btn btn-outline-warning col-xs-12 col-sm-6 col-md-4 col-lg-4"
       >
-        Add Drugs
+        Ajouter Medicament
       </button>
 
       <button
         onClick={() => setComponentToRender("AddDrug")}
         className="btn btn-outline-danger col-xs-12 col-sm-6 col-md-4 col-lg-4"
       >
-        Daily Inventory Report
+          Raport Inventaire Jourmnalier
       </button>
       <button
         onClick={() => setComponentToRender("UpToDateStockBalance")}
@@ -38,7 +38,7 @@ const Tabs = ({ setComponentToRender }) => {
         onClick={() => setComponentToRender("EditDrugs")}
         className="btn btn-outline-success col-xs-12 col-sm-6 col-md-5 col-lg-5"
       >
-        Up To Date Stock Balance
+        Mis à jouer Stock
       </button>
       <button
         onClick={() => setComponentToRender("AddPurchase")}
@@ -50,7 +50,7 @@ const Tabs = ({ setComponentToRender }) => {
         onClick={() => setComponentToRender("DispensaryTable")}
         className="btn btn-outline-warning col-xs-12 col-sm-6 col-md-4 col-lg-4"
       >
-        Dispensary Table
+        Dispensaire Table
       </button>
     </div>
   );
@@ -103,7 +103,7 @@ class PharmacyDashboard extends React.Component {
         case "DispensaryTable":
           return <DispensaryTable />;
       default:
-        return <p className="text-center">Select an item above to view</p>;
+        return <p className="text-center">Selectioner item</p>;
     }
   };
 

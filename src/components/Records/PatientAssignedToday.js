@@ -47,7 +47,7 @@ export default class extends Component {
       <div>
         <Card className="border-secondary">
           <h6 style={{ textAlign: 'center' }}>
-            List of patients assigned today {today.toLocaleDateString()}
+            Liste des patients assignes aujourd'huit {today.toLocaleDateString()}
           </h6>
           <div
             style={{
@@ -62,14 +62,14 @@ export default class extends Component {
                 !error.length ? (
                   <Loading />
                 ) : (
-                  <p>No Record Found</p>
+                  <p>Rien Enregistré</p>
                 )
               ) : (
                 <Table striped bordered hover>
                   <thead>
                     <tr>
                       <th />
-                      <th>Doctors</th>
+                      <th>Docteurs</th>
                       <th className="moveToCenter">Patients</th>
                     </tr>
                   </thead>

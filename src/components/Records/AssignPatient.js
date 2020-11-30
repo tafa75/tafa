@@ -101,7 +101,7 @@ class AssignPatient extends React.Component {
     return (
       <div>
         <Button onClick={this.toggle}>
-          Asign Doctors to Patients
+           Patients assignés a Docteur...
           {this.props.buttonLabel}
         </Button>
         <Modal
@@ -110,7 +110,7 @@ class AssignPatient extends React.Component {
           toggle={this.toggle}
           className={this.props.className}>
           <ModalHeader toggle={this.toggle}>
-            Assign Patient to Doctor
+          Patients assignés a Docteur...
           </ModalHeader>
           <ModalBody>
             <div className="row">
@@ -129,13 +129,13 @@ class AssignPatient extends React.Component {
                   />
                 </div>
                 <div className="form-group">
-                  <label>Select a Doctor</label>
+                  <label>Selectioner  Docteur</label>
                   <select className="form-control" ref="assigned_to">
-                    <option>Dr. Saada</option>
+                    <option></option>
                   </select>
                 </div>
                 <div className="form-group">
-                  <label>Enter Patient No.</label>
+                  <label>Entrer Patient No.</label>
                   <input
                     type="text"
                     ref="id"

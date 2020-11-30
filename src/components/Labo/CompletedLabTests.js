@@ -47,7 +47,7 @@ export default class CompletedLabTests extends React.Component {
     });
     return (
       <div>
-        <h4 className="text-center">Completed Lab Tests</h4>
+        <h4 className="text-center">Tests Complets Laboratoire </h4>
         <input
           className="form-control"
           value={filterText}
@@ -66,13 +66,13 @@ export default class CompletedLabTests extends React.Component {
                 <th>Patient ID</th>
                 <th>Test ID</th>
                 <th>Test</th>
-                <th>Requested By</th>
+                <th>A la Demande De ...</th>
               </tr>
             </thead>
             <tbody>{rows}</tbody>
           </Table>
         )}
-        {!error.length && !completedLabTests.length && <p className="text-center">No Record found</p>}
+        {!error.length && !completedLabTests.length && <p className="text-center">Rien Enregistrer</p>}
       </div>
     );
   }

@@ -105,14 +105,14 @@ class AddDrugForm extends React.Component {
         </div>
         <br />
         <div className="row">
-          <label className="col-md-2">Item Name:</label>
+          <label className="col-md-2">Nom Produit:</label>
           <input
             className="form-control col-md-4"
             value={name}
             name="name"
             onChange={onInputChange}
           />
-          <label className="col-md-2">Unit of Issue</label>
+          <label className="col-md-2">Unité D´emission</label>
           <input
             className="form-control col-md-4"
             value={unit_of_issue}
@@ -122,14 +122,14 @@ class AddDrugForm extends React.Component {
         </div>
         <br />
         <div className="row">
-          <label className="col-md-2">Quantity:</label>
+          <label className="col-md-2">Quantité:</label>
           <input
             className="form-control col-md-4"
             value={quantity}
             name="quantity"
             onChange={onInputChange}
           />
-          <label className="col-md-2">Price</label>
+          <label className="col-md-2">Prix</label>
           <input
             className="form-control col-md-4"
             value={price}
@@ -139,7 +139,7 @@ class AddDrugForm extends React.Component {
         </div>
         <br />
         <div className="row">
-          <label className="col-md-2">Expiry Date:</label>
+          <label className="col-md-2">Date D´expiration:</label>
           <input
             className="form-control col-md-4"
             value={expiry_date}
@@ -234,7 +234,7 @@ export default class AddDrug extends React.Component {
     const { onSubmitClick, saveToList, editList } = this;
     return (
       <Card>
-        <h5 className="text-center">Add New Stock to Store</h5>
+        <h5 className="text-center">Ajouter au Stock</h5>
         <CardBody>
           <AddDrugForm saveToList={saveToList} />
 
@@ -256,7 +256,7 @@ export default class AddDrug extends React.Component {
           Close
         </button> */}
         <button className="btn btn-outline-primary offset-md-2" onClick={onSubmitClick}>
-          Submit
+          Envoyer
         </button>
         </div>
       </Card>
@@ -272,13 +272,13 @@ const ListTable = ({ list, onEditClick, onRemoveClick }) => (
           <tr>
             <th>S/N</th>
             <th>Date</th>
-            <th>Name</th>
-            <th>Unit of Issue</th>
-            <th>Quantity</th>
-            <th>Price</th>
-            <th>Expiry Date</th>
-            <th>Edit</th>
-            <th>Delete</th>
+            <th>Nom</th>
+            <th>Unité D´emission</th>
+            <th>Quantité</th>
+            <th>Prix</th>
+            <th>Date D´expiration</th>
+            <th>Editer</th>
+            <th>Effacer</th>
           </tr>
         </thead>
         <tbody>
@@ -321,7 +321,7 @@ const EditModal = ({
   editList,
 }) => (
   <Modal isOpen={editModalIsOpen} toggle={toggleEditModal} size="lg">
-    <ModalHeader toggle={toggleEditModal}>Edit Drug Information</ModalHeader>
+    <ModalHeader toggle={toggleEditModal}>Editer Informations Medicaments</ModalHeader>
     <ModalBody>
       <AddDrugForm
         currentItem={currentItem}

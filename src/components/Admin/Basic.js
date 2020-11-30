@@ -53,8 +53,7 @@ export class Basic extends React.Component {
           </SideNav>
         </Navigation>
         <Body>
-          This simple example shows how you can use react-sidenav to create a
-          tree like structure
+         
         </Body>
       </AppContainer>
     );

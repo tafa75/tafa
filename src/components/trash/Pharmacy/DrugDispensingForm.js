@@ -10,7 +10,7 @@ class DrugDispensingForm extends Component {
     return (
       <div>
         <Card>
-          <CardHeader>Drug Costing Form</CardHeader>
+          <CardHeader>Formulaire de coût des médicaments</CardHeader>
           <CardBody>
             <form>
               <div className="form-group row">
@@ -22,7 +22,7 @@ class DrugDispensingForm extends Component {
                 />
               </div>
               <div className="form-group row">
-                <label className="control-label col-md-3">Drug</label>
+                <label className="control-label col-md-3">Medicaments</label>
                 <input
                   type="text"
                   className="form-control col-md-6"
@@ -30,7 +30,7 @@ class DrugDispensingForm extends Component {
                 />
               </div>
               <div className="form-group row">
-                <label className="control-label col-md-3">Quantity</label>
+                <label className="control-label col-md-3">Quantité</label>
                 <input
                   type="text"
                   className="form-control col-md-6"
@@ -38,15 +38,15 @@ class DrugDispensingForm extends Component {
                 />
               </div>
               <div className="form-group row">
-                <label className="control-label col-md-3">Price</label>
+                <label className="control-label col-md-3">Prix</label>
                 <label />
               </div>
               <div className="form-group row">
                 <label className="control-label col-md-3">Balance</label>
                 <label />
               </div>
-              <button className="btn">Add to List</button>
-              <button className="btn">Save</button>
+              <button className="btn">Ajouter à la liste</button>
+              <button className="btn">Enregistrer</button>
             </form>
           </CardBody>
         </Card>
@@ -56,15 +56,15 @@ class DrugDispensingForm extends Component {
             <thead>
               <tr>
                 <th>PARENT ID</th>
-                <th>Expiry Date</th>
+                <th>Date D´expiration</th>
                 <th>Balance</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td>CHLORXY-G GEL</td>
-                <td>23-OCT-17</td>
-                <td>22</td>
+                <td></td>
+                <td></td>
+                <td></td>
               </tr>
             </tbody>
           </Table>

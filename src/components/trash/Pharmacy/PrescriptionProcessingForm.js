@@ -376,7 +376,7 @@ export default class PrescriptionProcessingForm extends Component {
 
         <br />
 
-        <h5 className="text-center">Pending Drugs</h5>
+        <h5 className="text-center">Medicaments En Attente</h5>
 
         {/* <div style={{ width: '100%', height: '28vh' }}>
               <FreeScrollBar> */}
@@ -385,17 +385,17 @@ export default class PrescriptionProcessingForm extends Component {
             <Loading />
           ) : (
             <p className="text-center">
-              <em>No record found</em>
+              <em>Rien Enregistrer</em>
             </p>
           )
         ) : (
           <Table striped bordered hover responsive>
             <thead>
               <tr>
-                <th>Drugs</th>
+                <th>Medicaments</th>
                 <th>Prescription</th>
-                <th>Unit Price</th>
-                <th>Qty Dispensed</th>
+                <th>Prix Unitaire</th>
+                <th>Qty Administrer</th>
                 {/* <th>Price</th> */}
                 {/* <th>Dispense</th> */}
               </tr>
@@ -425,18 +425,18 @@ export default class PrescriptionProcessingForm extends Component {
           className="btn btn-outline-success offset-xs-1 offset-sm-1 offset-md-1"
           title="Add a drug to the list"
           onClick={this.toggle}>
-          Add Drug
+          Ajouter Medicaments
         </button>
 
         <button
           className="btn btn-outline-danger offset-xs-1 offset-sm-1 offset-md-1"
           title="close"
           onClick={toggleProcessingForm}>
-          Close
+          Fermer
         </button>
 
         <Modal size="lg" isOpen={this.state.addDrugMmodal} toggle={this.toggle}>
-          <ModalHeader toggle={this.toggle}>Add Drugs</ModalHeader>
+          <ModalHeader toggle={this.toggle}>Ajouter Medicaments</ModalHeader>
           <ModalBody>
             <Card>
               <CardBody>
@@ -460,7 +460,7 @@ export default class PrescriptionProcessingForm extends Component {
           isOpen={this.state.changeDrugModal}
           toggle={this.toggleDrugModal}>
           <ModalHeader toggle={this.toggleDrugModal}>
-            Change this drug
+            Changer Ce Medicament
           </ModalHeader>
           <ModalBody>
             <SearchBar
@@ -493,13 +493,13 @@ const AddDrugForm = ({
 }) => (
   <form>
     <div className="row">
-      <label className="col-md-2">Drug</label>
+      <label className="col-md-2">Medicaments</label>
       <input
         className="form-control col-md-4"
         value={drug}
         onChange={onDrugChange}
       />
-      <label className="col-md-2">Quantity</label>
+      <label className="col-md-2">Quantité</label>
       <input
         className="form-control col-md-4"
         value={quantity}
@@ -508,7 +508,7 @@ const AddDrugForm = ({
     </div>
     <br />
     <div className="row">
-      <label className="col-md-2">Price</label>
+      <label className="col-md-2">Prix</label>
       <input
         className="form-control col-md-4"
         value={price}
@@ -528,7 +528,7 @@ const AddDrugForm = ({
         addDrug();
       }}
       className="btn btn-outline-secondary">
-      Add
+      Ajouter
     </button>
   </form>
 );
@@ -570,9 +570,9 @@ const DrugsTable = ({ drugList, changeDrug, searchTerm }) => {
         <Table hover bordered>
           <thead>
             <tr>
-              <th>Name</th>
-              <th>Quantity in Stock</th>
-              <th>Price</th>
+              <th>Nom</th>
+              <th>Quantité en Stock</th>
+              <th>Prix</th>
             </tr>
           </thead>
           <tbody>{rows}</tbody>

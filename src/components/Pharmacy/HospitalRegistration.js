@@ -147,7 +147,7 @@ if(!this.state.errorcontactPerson){
     return(
       
     <div>
-       <center><h4 className='head'>HOSPITAL REGISTRATION</h4></center>
+       <center><h4 className='head'>HOSPITALISATION</h4></center>
     <div> <br />
 
        <Form>
@@ -290,13 +290,13 @@ if(!this.state.errorcontactPerson){
            <thead>
            <tr>
               <th>No</th>
-             <th>Name</th>
-             <th>Address</th>
+             <th>NOM</th>
+             <th>AddressE</th>
              <th>Contact</th>
              <th>Email</th>
-             <th>phone No</th>
+             <th>Telephone</th>
             
-             <th>Delete</th>
+             <th>Effacer</th>
 
            </tr>
            </thead>
@@ -311,7 +311,7 @@ if(!this.state.errorcontactPerson){
              <td>{item.phoneNumber}</td>
              
              <td><Button className="btn btn-danger"onClick={()=> this.handleDelete(item)}>
-               Delete
+               Effacer
              </Button></td>
 
              </tr>

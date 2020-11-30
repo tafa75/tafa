@@ -50,31 +50,31 @@ class PatientForm extends Component {
             </FormGroup>
 
             <FormGroup row>
-              <Label>Surname:</Label>
+              <Label>Nom:</Label>
             </FormGroup>
             <FormGroup row>
-              <Label>Firstname:</Label>
+              <Label>Prenom:</Label>
             </FormGroup>
             <FormGroup row>
-              <Label>Gender:</Label>
+              <Label>sexe:</Label>
             </FormGroup>
             <FormGroup row>
               <Label>Age:</Label>
             </FormGroup>
             <FormGroup row>
-              <Label>Marital Status:</Label>
+              <Label>Situation Matrimoniale:</Label>
             </FormGroup>
             <FormGroup row>
-              <Label>Date of Birth:</Label>
+              <Label>Date De Naissance:</Label>
             </FormGroup>
             <FormGroup row>
-              <Label>Tribe:</Label>
+            
             </FormGroup>
             <FormGroup row>
-              <Label>Religion:</Label>
+            
             </FormGroup>
             <FormGroup row>
-              <Label>Phone Number:</Label>
+              <Label>Telephone:</Label>
             </FormGroup>
             <FormGroup row>
               <Label>Email:</Label>
